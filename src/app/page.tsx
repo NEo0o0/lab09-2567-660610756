@@ -76,5 +76,5 @@ export default function Home() {
       {/* //footer section */}
       <Footer year="2024" fullName="Nathdanai Thipdonjun" studentId="660610756" />
     </div>
-  );
+  );}
 }
