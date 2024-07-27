@@ -45,6 +45,7 @@ export default function Home() {
       task.completed = !task.completed;
       setTasks(newTasks);
     }
+  };
 
   return (
     // Main container
@@ -55,7 +56,7 @@ export default function Home() {
       <div style={{ maxWidth: "400px" }} className="mx-auto">
         {/* Task summary */}
         <p className="text-center text-secondary fst-italic">
-        All ({tasks.length}) Done ({tasks.filter((tasks)=>tasks.completed).length})
+          All ({tasks.length}) Done ({tasks.filter((tasks)=>tasks.completed).length})
         </p>
         {/* task input */}
         <TaskInput addTaskFunc={addTask} />
@@ -76,5 +77,5 @@ export default function Home() {
       {/* //footer section */}
       <Footer year="2024" fullName="Nathdanai Thipdonjun" studentId="660610756" />
     </div>
-  );}
+  );
 }
